@@ -8,15 +8,15 @@ export default function AboutPage() {
   // TEMP: replace these with your real images in /public
   const photos = [
     // live1 — TOP-LEFT
-    { src: "/live1.avif", alt: "live1.avif", rotate: "-rotate-8", pos: "md:top-[4%] md:left-[2%]",  z: "md:z-[3]", w: "w-[40%]", wlg: "lg:w-[38%]", h: "h-[360px]", hlg: "lg:h-[400px]" },
+    { src: "/about/live1.avif", alt: "live1.avif", rotate: "-rotate-8", pos: "md:top-[4%] md:left-[2%]",  z: "md:z-[3]", w: "w-[40%]", wlg: "lg:w-[38%]", h: "h-[360px]", hlg: "lg:h-[400px]" },
     // live3 — TOP-RIGHT
-    { src: "/live3.avif", alt: "live3.avif", rotate: "rotate-7",  pos: "md:top-[4%] md:left-[58%]", z: "md:z-[3]", w: "w-[40%]", wlg: "lg:w-[38%]", h: "h-[360px]", hlg: "lg:h-[400px]" },
+    { src: "/about/live3.avif", alt: "live3.avif", rotate: "rotate-7",  pos: "md:top-[4%] md:left-[58%]", z: "md:z-[3]", w: "w-[40%]", wlg: "lg:w-[38%]", h: "h-[360px]", hlg: "lg:h-[400px]" },
     // live2 — BOTTOM-LEFT
-    { src: "/live2.avif", alt: "live2.avif", rotate: "-rotate-6", pos: "md:top-[58%] md:left-[6%]", z: "md:z-[4]", w: "w-[36%]", wlg: "lg:w-[34%]", h: "h-[340px]", hlg: "lg:h-[380px]" },
+    { src: "/about/live2.avif", alt: "live2.avif", rotate: "-rotate-6", pos: "md:top-[58%] md:left-[6%]", z: "md:z-[4]", w: "w-[36%]", wlg: "lg:w-[34%]", h: "h-[340px]", hlg: "lg:h-[380px]" },
     // live4 — BOTTOM-RIGHT
-    { src: "/live4.avif", alt: "live4.avif", rotate: "-rotate-2", pos: "md:top-[60%] md:left-[62%]", z: "md:z-[4]", w: "w-[34%]", wlg: "lg:w-[32%]", h: "h-[320px]", hlg: "lg:h-[360px]" },
+    { src: "/about/live4.avif", alt: "live4.avif", rotate: "-rotate-2", pos: "md:top-[60%] md:left-[62%]", z: "md:z-[4]", w: "w-[34%]", wlg: "lg:w-[32%]", h: "h-[320px]", hlg: "lg:h-[360px]" },
     // live5 — CENTER (on top)
-    { src: "/live5.avif", alt: "live5.avif", rotate: "-rotate-4", pos: "md:top-[26%] md:left-[35%]", z: "md:z-[5]", w: "w-[36%]", wlg: "lg:w-[36%]", h: "h-[400px]", hlg: "lg:h-[440px]" },
+    { src: "/about/live5.avif", alt: "live5.avif", rotate: "-rotate-4", pos: "md:top-[26%] md:left-[35%]", z: "md:z-[5]", w: "w-[36%]", wlg: "lg:w-[36%]", h: "h-[400px]", hlg: "lg:h-[440px]" },
   ];
 
   return (
