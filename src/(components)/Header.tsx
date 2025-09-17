@@ -18,27 +18,39 @@ export default function Header() {
     return (
         <header className="sticky top-0 z-40 border-b border-neutral-800 bg-black/70 backdrop-blur supports-[backdrop-filter]:bg-black/50">
             <nav className="container mx-auto px-4 py-3 flex items-center justify-between">
+                {/* Logo */}
                 <Link href="/" aria-label="Home" className="flex items-center gap-2">
-                    <Image src="/TKE_2025_LOGO.avif" alt="The Kidd Electric" width={140} height={44} className="h-8 w-auto" priority />
+                    <Image
+                        src="/TKE_2025_LOGO.avif"
+                        alt="The Kidd Electric"
+                        width={140}
+                        height={44}
+                        className="h-8 w-auto"
+                        priority
+                    />
                 </Link>
 
-                {/* desktop links */}
+                {/* Desktop links */}
                 <ul className="hidden md:flex gap-4 text-sm">
                     <li><Link href="/music" className="hover:opacity-80">Music</Link></li>
                     <li><Link href="/tour" className="hover:opacity-80">Tour</Link></li>
-                    <li><Link href="/contact" className="hover:opacity-80">Contact</Link></li>
                     <li><Link href="/about" className="hover:opacity-80">About</Link></li>
                     <li><Link href="/gallery" className="hover:opacity-80">Gallery</Link></li>
                     <li><Link href="/lyrics" className="hover:opacity-80">Lyrics</Link></li>
+                    <li><Link href="/contact" className="hover:opacity-80">Contact</Link></li>
                     <li>
-                        <a href="https://thekiddelectric.threadless.com/designs/the-kidd-electric-skull-t"
-                           target="_blank" rel="noopener noreferrer" className="hover:opacity-80">
+                        <a
+                            href="https://thekiddelectric.threadless.com/designs/the-kidd-electric-skull-t"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            className="hover:opacity-80"
+                        >
                             Shop
                         </a>
                     </li>
                 </ul>
 
-                {/* mobile burger */}
+                {/* Mobile burger */}
                 <MobileMenu />
             </nav>
         </header>

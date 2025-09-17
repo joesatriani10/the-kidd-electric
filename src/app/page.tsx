@@ -2,6 +2,7 @@ import Image from "next/image";
 import Link from "next/link";
 import { upcomingShows, formatShow } from "@/data/shows";
 import Section from "@/(components)/Section";
+import PressStrip from "@/(components)/PressStrip";
 
 export const metadata = {
     title: "The Kidd Electric — Official Site",
@@ -89,7 +90,7 @@ export default function HomePage() {
                         alt="The Kidd Electric"
                         width={820}
                         height={400}
-                        className="mx-auto w-[72%] max-w-[640px] h-auto select-none"
+                        className="tv-flicker mx-auto w-[72%] max-w-[640px] h-auto select-none"
                         priority
                     />
 
@@ -155,6 +156,7 @@ export default function HomePage() {
                     ))}
                 </div>
             </Section>
+            <PressStrip />
         </main>
     );
 }

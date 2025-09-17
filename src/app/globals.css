@@ -97,3 +97,33 @@ html.scrolled header { box-shadow: 0 6px 24px rgba(0,0,0,.35); }
     mix-blend-mode: overlay;
     pointer-events:none;
 }
+
+
+/* Crazy CRT flicker + heavy RGB split */
+@keyframes tke-crt-flicker {
+    0%, 100% { opacity: 0.95; transform: none; }
+    3%  { opacity: 0.5; transform: translate3d(-3px, 2px, 0) scale(1.05) rotate(-0.5deg); }
+    7%  { opacity: 1;   transform: translate3d(3px, -2px, 0) scale(0.97) rotate(0.5deg); }
+    15% { opacity: 0.6; transform: translate3d(-2px, -3px, 0) scale(1.04); }
+    25% { opacity: 1;   transform: translate3d(2px, 3px, 0) scale(0.96); }
+    40% { opacity: 0.4; transform: translate3d(-4px, 1px, 0) scale(1.06) rotate(-1deg); }
+    55% { opacity: 1;   transform: translate3d(4px, -1px, 0) scale(0.95) rotate(1deg); }
+    70% { opacity: 0.5; transform: translate3d(-2px, 2px, 0) scale(1.05); }
+    85% { opacity: 0;   transform: translate3d(0, 0, 0) scale(1.1); } /* blackout */
+    95% { opacity: 1;   transform: none; }
+}
+
+.tv-flicker {
+    animation: tke-crt-flicker 3.2s infinite steps(30);
+    will-change: opacity, transform;
+    filter:
+            contrast(1.2)
+            saturate(1.3)
+            drop-shadow(-3px 0 red)
+            drop-shadow(3px 0 cyan)
+            drop-shadow(0 2px blue);
+}
+
+@media (prefers-reduced-motion: reduce) {
+    .tv-flicker { animation: none; }
+}
