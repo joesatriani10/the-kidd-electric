@@ -16,7 +16,7 @@ export default function EasterEgg() {
                 if (idx.current === KONAMI.length) {
                     idx.current = 0;
                     // Rick time 😈
-                    window.open("https://www.youtube.com/watch?v=dQw4w9WgXcQ", "_blank", "noopener,noreferrer");
+                    window.open("https://www.youtube.com/shorts/Ay8lynMZ4mE", "_blank", "noopener,noreferrer");
                 }
             } else {
                 // reset si la tecla no corresponde
