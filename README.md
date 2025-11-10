@@ -2,11 +2,11 @@
 
 A moody, high-energy band site built with Next.js 15. It showcases The Kidd Electric's latest music, tour dates, press, and visuals in a single-page experience with dedicated routes for deeper dives.
 
-## ✨ Highlights
-- **Striking hero + marquee:** The landing page combines a logo hero, CTA buttons, and an animated tour marquee driven by typed show data. 【F:src/app/page.tsx†L15-L118】【F:src/data/shows.ts†L10-L43】
-- **Modular sections:** Reusable layout primitives power consistent spacing and typography across pages. 【F:src/(components)/Section.tsx†L1-L8】
-- **Rich content routes:** Explore dedicated pages for music streaming links, tour details, an image gallery, lyrics, and a booking/contact hub with social links and a mail-ready CTA. 【F:src/app/music/page.tsx†L1-L200】【F:src/app/tour/page.tsx†L1-L200】【F:src/app/gallery/page.tsx†L1-L200】【F:src/app/lyrics/page.tsx†L1-L19】【F:src/app/contact/page.tsx†L1-L74】
-- **Easter eggs & polish:** Global layout components deliver navigation, footer, and a playful `EasterEgg` overlay without sacrificing performance. 【F:src/app/layout.tsx†L1-L24】
+## Screenshoot
+
+<img width="1568" height="1005" alt="image" src="https://github.com/user-attachments/assets/0a411fa4-a7e5-4999-abe7-0401b840629d" />
+
+
 
 ## 🛠️ Tech Stack
 - [Next.js 15](https://nextjs.org/) (App Router, TypeScript, Turbopack dev/build) 【F:package.json†L7-L22】
